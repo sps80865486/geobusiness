@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>Example Strava Login Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<center>
+
+
+
+<h1>Segments Results in Paracuellos</h1>
+
+<table style="width:80%">
+<tr>
+	<td><strong>ID</strong></td>
+	<td><strong>Name</strong></td>
+	<td><strong>Intentos</strong></td>
+	<td><strong>Atletas</strong></td>
+	<td><strong>Distancia</strong></td>
+	<td><strong>Este ano</strong></td>
+	<td><strong>Hoy</strong></td>
+	<td><strong>Start</strong></td>
+	<td><strong>End</strong></td>
+	</tr>
+{% for segmentPara in segmentsPara%}
+	<tr>
+	<td>{{ segmentPara[0]}}</td>
+	<td>{{ segmentPara[1]}}</td>
+	<td>{{ segmentPara[2]}}</td>
+	<td>{{ segmentPara[3]}}</td>
+	<td>{{ segmentPara[4]}}</td>
+	<td>{{ segmentPara[5]}}</td>
+	<td>{{ segmentPara[6]}}</td>
+	</tr>
+  {% endfor %}
+</table>
+
+<iframe width="60%" height="420" frameborder="0" src="https://sps80865486.carto.com/builder/5580a8b2-3eba-4d5a-aabe-52902f5f7303/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+
+<h1>Segments Results in Norte Madrid</h1>
+
+<table style="width:80%">
+<tr>
+	<td><strong>ID</strong></td>
+	<td><strong>Name</strong></td>
+	<td><strong>Intentos</strong></td>
+	<td><strong>Atletas</strong></td>
+	<td><strong>Distancia</strong></td>
+	<td><strong>Este ano</strong></td>
+	<td><strong>Hoy</strong></td>
+	<td><strong>Start</strong></td>
+	<td><strong>End</strong></td>
+	</tr>
+{% for segmentNort in segmentsNort%}
+	<tr>
+	<td>{{ segmentNort[0]}}</td>
+	<td>{{ segmentNort[1]}}</td>
+	<td>{{ segmentNort[2]}}</td>
+	<td>{{ segmentNort[3]}}</td>
+	<td>{{ segmentNort[4]}}</td>
+	<td>{{ segmentNort[5]}}</td>
+	<td>{{ segmentNort[6]}}</td>
+	</tr>
+  {% endfor %}
+</table>
+
+<iframe width="60%" height="420" frameborder="0" src="https://sps80865486.carto.com/builder/308c5ade-3a3a-4dd5-87da-ff9a57b29c6a/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+
+<h1>Segments Results in CAM Madrid</h1>
+
+<table style="width:80%">
+<tr>
+	<td><strong>ID</strong></td>
+	<td><strong>Name</strong></td>
+	<td><strong>Intentos</strong></td>
+	<td><strong>Atletas</strong></td>
+	<td><strong>Distancia</strong></td>
+	<td><strong>Este ano</strong></td>
+	<td><strong>Hoy</strong></td>
+	<td><strong>Start</strong></td>
+	<td><strong>End</strong></td>
+	</tr>
+{% for segmentCAM in segmentsCAM%}
+	<tr>
+	<td>{{ segmentCAM[0]}}</td>
+	<td>{{ segmentCAM[1]}}</td>
+	<td>{{ segmentCAM[2]}}</td>
+	<td>{{ segmentCAM[3]}}</td>
+	<td>{{ segmentCAM[4]}}</td>
+	<td>{{ segmentCAM[5]}}</td>
+	<td>{{ segmentCAM[6]}}</td>
+	</tr>
+  {% endfor %}
+</table>
+
+<center>
+<iframe width="60%" height="420" frameborder="0" src="https://sps80865486.carto.com/builder/800df90e-2cc4-4fe1-824d-bdcfa7373846/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+</center>
+
+
+<h1>Segments Results in CASAVIEJA</h1>
+
+<table style="width:80%">
+<tr>
+	<td><strong>ID</strong></td>
+	<td><strong>Name</strong></td>
+	<td><strong>Intentos</strong></td>
+	<td><strong>Atletas</strong></td>
+	<td><strong>Distancia</strong></td>
+	<td><strong>Este ano</strong></td>
+	<td><strong>Hoy</strong></td>
+	<td><strong>Start</strong></td>
+	<td><strong>End</strong></td>
+	</tr>
+{% for segmentCAS in segmentsCAS%}
+	<tr>
+	<td>{{ segmentCAS[0]}}</td>
+	<td>{{ segmentCAS[1]}}</td>
+	<td>{{ segmentCAS[2]}}</td>
+	<td>{{ segmentCAS[3]}}</td>
+	<td>{{ segmentCAS[4]}}</td>
+	<td>{{ segmentCAS[5]}}</td>
+	<td>{{ segmentCAS[6]}}</td>
+	</tr>
+  {% endfor %}
+</table>
+
+<iframe width="60%" height="420" frameborder="0" src="https://sps80865486.carto.com/builder/4590078f-2b9c-42d5-ad04-57dd3fe433be/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+</center>
+
+</body>
+</html>
